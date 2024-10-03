@@ -14,7 +14,7 @@
     .tausta {
       width:100%;
       height:100%;
-      background:linear-gradient(rgb(144, 141, 141) 40%, rgb(78, 78, 83) 72%);
+      background:linear-gradient(rgb(144, 141, 141) 40%, rgb(34, 39, 56) 72%);
     }
     .aurinko {
       /* 
@@ -191,9 +191,11 @@
 
     .teksti {
         position:absolute;
-        top:89cm;
-        left:36cm;
-        font-size: 1cm;
+        top:2cm;
+        left:52cm;
+        font-size: 2cm;
+        font-family: Didot;
+        color: rgb(107, 52, 224);
     }
 
     .eye {
@@ -209,7 +211,6 @@
         filter: blur(3.5px);
         opacity: 10;
     }
-
 
     .ellipse2 {
         position:absolute;
@@ -235,6 +236,158 @@
         filter: blur(3.5px);
         opacity: 0.9;
 
+    }
+
+    .eye2 {
+        position:absolute;
+        top:20cm;
+        left:55cm;
+        width: 9cm;
+        height: 8cm;
+        background-color: #e5e5f7;
+        background: radial-gradient(circle, rgb(222, 217, 219) 0%, rgb(175, 181, 184) 100%);
+        border-radius: 80% 0;
+        rotate: 100deg;
+        scale: 1 -1;
+        filter: blur(3.5px);
+    }
+
+    .ellipse3 {
+        position:absolute;
+        top:20cm;
+        left:55cm;
+        width: 4cm;
+        height: 4cm;
+        background: radial-gradient(circle, rgb(17, 29, 105) 0%, rgb(185, 191, 196) 100%);
+        border-radius: 60%;
+        filter: blur(3.5px);
+        opacity: 0.9;
+
+    }
+
+    .ellipse4 {
+        position:absolute;
+        top:25cm;
+        left:59cm;
+        width: 15cm;
+        height: 15cm;
+        background: radial-gradient(circle, rgb(114, 131, 240) 0%, rgb(185, 191, 196) 100%);
+        filter: blur(3.5px);
+        opacity: 0.4;
+        border-radius: 40% 99% 50% / 44% 39% 99% 89%;
+        filter: blur(6.5px);
+
+    }
+
+    .flower {
+        position:absolute;
+        top:38cm;
+        left:59cm;
+        width: 15cm;
+        height: 40cm;
+        background: radial-gradient(circle, rgb(7, 7, 7) 0%, rgb(15, 0, 80) 100%);
+        width: 8cm; /* adjust to control the size */
+        aspect-ratio: 1;
+        --g:/90.56% 20.56% radial-gradient(#000 calc(40% - 1px),#0000 71%) no-repeat;
+        mask: radial-gradient(100% 100%,#000 calc(38.366% - 1px),#0000 38.366%) intersect,radial-gradient(#000 0 0) exclude,100% 50% var(--g),93.301% 75% var(--g),75% 93.301% var(--g),50% 100% var(--g),25% 93.301% var(--g),6.699% 75% var(--g),0% 50% var(--g),6.699% 25% var(--g),25% 6.699% var(--g),50% 0% var(--g),75% 6.699% var(--g),93.301% 25% var(--g);
+        rotate: 80deg;
+    }   
+
+    .flower2 {
+        position:absolute;
+        top:2cm;
+        left:30cm;
+        width: 69cm;
+        height: 100cm;
+        background: radial-gradient(circle, rgb(238, 234, 234) 0%, rgb(6, 25, 55) 100%);
+        width: 8cm; /* adjust to control the size */
+        aspect-ratio: 1;
+        --g:/40% 20.56% radial-gradient(#000 calc(20% - 1px),#0000 60%) no-repeat;
+        mask: radial-gradient(100% 100%,#000000 calc(38.366% - 1px),#0000 44%) intersect,radial-gradient(#000 0 0) exclude,100% 58% var(--g),300% 75% var(--g),75% 93.301% var(--g),50% 100% var(--g),80% 93.301% var(--g),6.699% 75% var(--g),0% 50% var(--g),6.699% 25% var(--g),25% 6.699% var(--g),50% 0% var(--g),75% 6.699% var(--g),93.301% 25% var(--g);
+        rotate: -40deg;
+        opacity: 0.8;
+    }  
+
+    .sparkle {
+        position:absolute;
+        top:19cm;
+        left:29cm;
+        height: 8cm;
+        width: 20cm;
+        background: #ffffff;
+        border-radius: 15% 99% 99% 9%/ 90% 80% 99% 88%;
+        rotate:50deg;
+        scale: 1 -1;
+        opacity: 0.4;
+
+        box-shadow:
+            0 0 60px 30px #fff,  /* inner white */
+            0 0 100px 60px #f0f, /* middle magenta */
+            0 0 140px 90px rgb(221, 217, 16); /* outer cyan */
+        /* mask: radial-gradient(#0000 71%, #000 72%) 10000% 10000%/99.5% 99.5%;   */
+        }
+        /* scale: 1 -1;
+        opacity: 0.3;
+         if you will use a different unit than px consider round()
+        height: round(__,1px);
+        width: round(__,1px);
+        */
+
+    .sparkle2 {
+        position:absolute;
+        top:90cm;
+        left:16cm;
+        height: 2cm;
+        width: 2cm;
+        background: #ffffff;
+        border-radius: 15% 99% 99% 90%/ 90% 80% 99% 88%;
+        rotate:50deg;
+        scale: 1 -1;
+        opacity: 0.2;
+
+        box-shadow:
+            0 0 60px 30px #fff,  /* inner white */
+            0 0 100px 60px #f0f, /* middle magenta */
+            0 0 140px 90px rgb(16, 67, 221); /* outer cyan */
+    
+    }
+
+    .sparkle3 {
+        position:absolute;
+        top:80cm;
+        left:24cm;
+        height: 1cm;
+        width: 1cm;
+        background: #ffffff;
+        border-radius: 15% 99% 99% 90%/ 90% 80% 99% 88%;
+        rotate:50deg;
+        scale: 1 -1;
+        opacity: 0.9;
+
+        box-shadow:
+            0 0 60px 30px #fff,  /* inner white */
+            0 0 100px 60px #f0f, /* middle magenta */
+            0 0 140px 90px rgb(16, 67, 221); /* outer cyan */
+    
+    }
+
+    .sparkle4 {
+        position:absolute;
+        top:10cm;
+        left:70cm;
+        height: 1cm;
+        width: 1cm;
+        background: #ffffff;
+        border-radius: 15% 99% 8% 90%/ 90% 80% 99% 88%;
+        rotate:50deg;
+        scale: 1 -2;
+        opacity: 0.5;
+
+        box-shadow:
+            0 0 60px 30px #fff,  /* inner white */
+            0 0 100px 60px rgb(246, 158, 246), /* middle magenta */
+            0 0 140px 90px rgb(113, 133, 194); /* outer cyan */
+    
     }
 
     *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
@@ -337,7 +490,11 @@ left:3mm;
         <!-- esimerkit -->
         <div class="tausta"></div>
         <div class="square5"></div>
+        <div class="flower2"></div>
         <div class="square10"></div>
+        <div class="eye2"></div>
+        <div class="ellipse3"></div>
+        <div class="ellipse4"></div>
         <div class="square11"></div>
         <div class="aurinko"></div>
         <div class="triangle"></div>
@@ -354,14 +511,14 @@ left:3mm;
         <div class="ellipse2"></div>
         <div class="ellipse"></div>
         <div class="teksti">
-            <p>Kolmantena opintopäivänä perjantaina päästiin itse asiaan eli HTML:n ja CSS:n äärelle. Olen ollut hetkellisissa burnoutin puuskissa lähiaikoina eli tämä päivä oli henkilökohtaisesti rankin.
-                Olin vaikeaa tarttua toimeen ja saada mahdollisuuksien loputtomasta maailmasta kiinni. Saimme kuitenkin hyviä ohjeita Heikiltä. 
-                Tällä kurssilla opintopäiväkirja pyörii poikkeuksellisesti tällä osoitteella. Päivitysporosessi on erilainen.
-                Opintopäiväkirja on minulle ehkä rakkain ja antoisin työkalu tähän astisissa opinnoissani. Näin ollen koen paljon painetta onnistua siinä myös uudessa ympäristössä.
-                Yksi mielenkiintoinen nosto oli myös se, että HTML on alunperin luotu akateemisten papereiden julkaisuun netissä.
-                Tietyt HTLM piirteet, kuten otsikoiden hiearkia (h1 jne.) mukailivat alunperin siis akateemisen tekstin perusteita!
+            <p>Digitaalista kuvanveistoa! ;D
               </p>
         </div>
+        <div class="flower"></div>
+        <div class="sparkle"></div>
+        <div class="sparkle2"></div>
+        <div class="sparkle3"></div>
+        <div class="sparkle4"></div>
 
 
 
