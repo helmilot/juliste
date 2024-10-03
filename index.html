@@ -8,7 +8,9 @@
   <style>
     body {
       transform-origin:0 0;
-      scale: 0.3;/* POISTA SCALE PAINOVERSIOON TAI KUN HALUAT KATSOA OIKEASSA KOOSSA: */
+      scale: 0.2;/* POISTA SCALE PAINOVERSIOON TAI KUN HALUAT KATSOA OIKEASSA KOOSSA: */
+      font-family: 'Bodoni 72 Oldstyle'
+
     }
     /* ESIMERKKI: */
     .tausta {
@@ -189,13 +191,42 @@
         background-image: repeating-linear-gradient(45deg, #323232 0, #323232 1px, #e5e5f7 0, #e5e5f7 50%);
     }
 
+    .square9copy {
+        position:absolute;
+        top:40cm;
+        left:42cm;
+        height:17cm;
+        width:15cm;
+        border-radius: 40% 99% 50% / 44% 39% 99% 89%;
+        filter: blur(2.5px);
+        background-color: #e5e5f7;
+        opacity: 0.1;
+        background-size: 10px 10px;
+        background-image: repeating-linear-gradient(45deg, #323232 0, #323232 1px, #e5e5f7 0, #e5e5f7 50%);
+    }
+
+
     .teksti {
         position:absolute;
-        top:2cm;
-        left:52cm;
+        top:6cm;
+        left:7cm;
         font-size: 2cm;
-        font-family: Didot;
-        color: rgb(107, 52, 224);
+        color: rgb(109, 89, 152);
+        -webkit-text-stroke: 5px rgb(255, 255, 255);
+        text-shadow: 0 0 99px #ffffff, 0 0 10px #ffffff;
+        filter: blur(5px)
+    }
+
+    .teksti2 {
+        position:absolute;
+        top:8cm;
+        left:9cm;
+        font-size: 2cm;
+        opacity: 0.2;
+        color: rgb(109, 89, 152);
+        -webkit-text-stroke: 5px rgb(255, 255, 255);
+        text-shadow: 0 0 99px #ffffff, 0 0 10px #ffffff;
+        filter: blur(5px)
     }
 
     .eye {
@@ -390,6 +421,113 @@
     
     }
 
+    .hamburger-menu {
+    position:absolute;
+    top:40cm;
+    left:23cm;
+    height:7cm;
+    width:20cm;
+    rotate:56deg;
+     --c: #000000;
+    aspect-ratio: 1;
+    border-radius: 15% 99% 8% 90%/ 90% 80% 99% 60%;
+    background:
+    radial-gradient(closest-side at 27% 30%,var(--c) 97%,#0000 101%) 0 0/80% 40%,
+    linear-gradient(var(--c) 3%,#0000 0) top/80% 40% repeat-y;
+    }
+
+    .ear {
+        position:absolute;
+        top:50cm;
+        left:11cm;
+        height:14cm;
+        width:9cm;
+        border-radius: 40% 99% 50% 60% / 44% 39% 99% 89%;
+        background: radial-gradient(circle, rgb(223, 224, 230) 0%, rgb(22, 3, 165) 100%);
+        filter: blur(2.5px);
+        opacity: 0.2;
+    }
+
+    .ear2 {
+        position:absolute;
+        top:51cm;
+        left:13cm;
+        height:12cm;
+        width:7cm;
+        border-radius: 40% 99% 50% 60% / 44% 39% 99% 89%;
+        background: radial-gradient(circle, rgb(219, 154, 213) 0%, rgb(137, 140, 226) 100%);
+        filter: blur(1.5px);
+        opacity: 0.1;
+    }
+
+    .earring {
+        position:absolute;
+        top:59cm;
+        left:13cm;
+        height:12cm;
+        width:7cm;
+        --s: 30px; /* control the shape (can be percentage) */
+        border-radius: 3% 50% 60% / 20% 39% 60% 400%;
+        clip-path: polygon(0 0,var(--s) 0,100% 90%,var(--s) 100%,0 90%,calc(100% - var(--s)) 55%);
+        background: #010101;
+        background-color: #e5e5f7;
+        background-image: linear-gradient(-45deg, #e5e5f7, #e5e5f7 50%, #000000 50%, #000000);
+        background-size: 10px 10px;
+
+    }
+
+    .starburst {
+        position:absolute;
+        top:71cm;
+        left:11cm;
+        height:5cm;
+        width:5cm;
+        background: #d72955;
+        aspect-ratio: 1;
+        clip-path: polygon(20% 50%,78.98% 80%,93.3% 75%,71.21% 20%,75% 93.3%,57.76% 78.98%,50% 100%,2% 78.98%,25% 93.3%,90% 71.21%,6.7% 75%,21.02% 57.76%,0% 100%,21.02% 42.24%,6.7% 25%,28.79% 28.79%,25% 6.7%,200% 21.02%,50% 0%,57.76% 21.02%,75% 6.7%,71.21% 28.79%,93.3% 25%,78.98% 42.24%);
+        scale: 1 -1;
+        filter: blur(40.5px);
+        rotate: 65deg;
+    }
+
+    .teksti3 {
+        position:absolute;
+        top:96cm;
+        left:3cm;
+        font-size: 2cm;
+        opacity:0.8;
+        rotate: -90deg;
+        color: rgb(109, 89, 152);
+        -webkit-text-stroke: 5px rgb(255, 255, 255);
+        text-shadow: 0 0 99px #9ea7c6, 0 0 10px #aea5cf;
+        filter: blur(4px)
+    }
+
+    .teksti4 {
+        position:absolute;
+        top:98cm;
+        left:4cm;
+        font-size: 2cm;
+        opacity:0.3;
+        rotate: -90deg;
+        color: rgb(109, 89, 152);
+        -webkit-text-stroke: 5px rgb(129, 128, 128);
+        text-shadow: 0 0 99px #001252, 0 0 10px #2b00c8;
+        filter: blur(3px)
+    }
+
+    .teksti5 {
+        position:absolute;
+        top:70cm;
+        left:68cm;
+        font-size: 3cm;
+        rotate: 90deg;
+        color: rgb(0, 0, 0);
+        -webkit-text-stroke: 5px rgb(225, 0, 116);
+        filter: blur(3px)
+        
+    }
+
     *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
   display: revert;
@@ -507,19 +645,57 @@ left:3mm;
         <div class="square7"></div>
         <div class="square8"></div>
         <div class="square9"></div>
+        <div class="square9copy"></div>
         <div class="eye"></div>
         <div class="ellipse2"></div>
         <div class="ellipse"></div>
         <div class="teksti">
-            <p>Digitaalista kuvanveistoa! ;D
+            <p>Digitaalista kuvanveistelyä
               </p>
+              <p>css html love pete
+            </p>
+            <p> div class = helmi
+            </p>
+        </div>
+        <div class="teksti2">
+            <p>Digitaalista kuvanveistelyä
+              </p>
+              <p>css html love pete
+            </p>
+            <p> div class = helmi
+            </p>
         </div>
         <div class="flower"></div>
         <div class="sparkle"></div>
         <div class="sparkle2"></div>
         <div class="sparkle3"></div>
         <div class="sparkle4"></div>
+        <div class="hamburger-menu"></div>
+        <div class="ear"></div>
+        <div class="ear2"></div>
+        <div class="earring"></div>
+        <div class="starburst"></div>
+        <div class="teksti3">
+            <p>div class = experiment
+              </p>
+              <p>kiitos kurssista
+            </p>
+            <p> Heikki-ope
+            </p>
+        </div>
+        <div class="teksti4">
+            <p>div class = experiment
+              </p>
+              <p>kiitos kurssista
+            </p>
+            <p> Heikki-ope ★ ★ ★ ★ ★
+            </p>
+        </div>
 
+        <div class="teksti5">
+            <p>⚙ ⚙ ⩉ Anima computatri
+              </p>
+        </div>
 
 
       <!-- JULISTEEN SISÄLTÖ NÄIDEN KAHDEN KOMMENTIN VÄLIIN -->
