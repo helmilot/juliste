@@ -8,7 +8,7 @@
   <style>
     body {
       transform-origin:0 0;
-      scale: 0.2;/* POISTA SCALE PAINOVERSIOON TAI KUN HALUAT KATSOA OIKEASSA KOOSSA: */
+      scale: 0.3;/* POISTA SCALE PAINOVERSIOON TAI KUN HALUAT KATSOA OIKEASSA KOOSSA: */
       font-family: 'Bodoni 72 Oldstyle'
 
     }
@@ -16,7 +16,7 @@
     .tausta {
       width:100%;
       height:100%;
-      background:linear-gradient(rgb(144, 141, 141) 40%, rgb(34, 39, 56) 72%);
+      background:linear-gradient(rgb(141, 139, 152) 40%, rgb(34, 39, 56) 72%);
     }
     .aurinko {
       /* 
@@ -31,6 +31,7 @@
       height:50cm;
       background: radial-gradient(circle, rgb(54, 51, 52) 0%, rgba(148,187,233,1) 100%);
       border-radius:100%;
+      filter: blur(0.5px);
     }
 
     .triangle {
@@ -316,9 +317,9 @@
         left:59cm;
         width: 15cm;
         height: 40cm;
-        background: radial-gradient(circle, rgb(7, 7, 7) 0%, rgb(15, 0, 80) 100%);
         width: 8cm; /* adjust to control the size */
         aspect-ratio: 1;
+        background: radial-gradient(circle, rgb(7, 7, 7) 0%, rgb(15, 0, 80) 100%);
         --g:/90.56% 20.56% radial-gradient(#000 calc(40% - 1px),#0000 71%) no-repeat;
         mask: radial-gradient(100% 100%,#000 calc(38.366% - 1px),#0000 38.366%) intersect,radial-gradient(#000 0 0) exclude,100% 50% var(--g),93.301% 75% var(--g),75% 93.301% var(--g),50% 100% var(--g),25% 93.301% var(--g),6.699% 75% var(--g),0% 50% var(--g),6.699% 25% var(--g),25% 6.699% var(--g),50% 0% var(--g),75% 6.699% var(--g),93.301% 25% var(--g);
         rotate: 80deg;
@@ -518,15 +519,118 @@
 
     .teksti5 {
         position:absolute;
-        top:70cm;
-        left:68cm;
-        font-size: 3cm;
-        rotate: 90deg;
-        color: rgb(0, 0, 0);
+        top:65cm;
+        left:72cm;
+        font-size: 4cm;
+        rotate: 0deg;
+        color: rgb(249, 249, 249);
         -webkit-text-stroke: 5px rgb(225, 0, 116);
+        text-shadow: 0 0 99px #ffa3fa, 0 0 10px #ffeafd;
         filter: blur(3px)
         
     }
+
+    .teksti6 {
+        position:absolute;
+        top:59cm;
+        left:77cm;
+        font-size: 3cm;
+        rotate: 0deg;
+        opacity:0.3;
+        color: rgb(249, 249, 249);
+        -webkit-text-stroke: 5px rgb(225, 0, 116);
+        text-shadow: 0 0 99px #ffa3fa, 0 0 10px #ffeafd;
+        filter: blur(3px)
+        
+    }
+
+
+    .teksti7 {
+        position:absolute;
+        top:13cm;
+        left:46cm;
+        font-size: 1cm;
+        opacity:0.3;
+        rotate: 25deg;
+        color: rgb(206, 1, 100);
+        -webkit-text-stroke: 3px rgb(255, 255, 255);
+        text-shadow: 0 0 99px #ffffff, 0 0 10px #ffffff;
+        filter: blur(1px)
+    }
+
+    .teksti8 {
+        position:absolute;
+        top:19cm;
+        left:70cm;
+        font-size: 1.5cm;
+        opacity:0.6;
+        rotate: 25deg;
+        color: rgb(255, 195, 224);
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+        text-shadow: 0 0 99px #ffffff, 0 0 10px #ffffff;
+        filter: blur(1px)
+        
+    }
+
+    .taustapat {
+        position: absolute;
+        top: 40cm;
+        left: 25cm;
+        height: 38cm;
+        width: 35cm;
+        border-radius: 40% 99% 50% / 44% 39% 99% 89%;
+        filter: blur(3px);
+        background-image: 
+        linear-gradient(#cda0bb 1px, transparent 2px), 
+        linear-gradient(90deg, #696969 1px, transparent 2px), 
+        linear-gradient(#ffffff 1px, transparent 1px), 
+        linear-gradient(90deg, #686868 1px, transparent 1px);
+        background-size: 25px 25px, 25px 25px, 25px 25px, 25px 25px;
+        background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+.pearl{
+        position:absolute;
+        top:70.5cm;
+        left:13.5cm;
+        height:1cm;
+        width:1cm;
+        rotate:40deg;
+        border-radius: 80% 99% 50% 70% / 70% 70% 99% 89%;
+        background: radial-gradient(circle, rgb(223, 224, 230) 0%, rgb(152, 162, 210) 100%);
+        filter: blur(2.5px);
+    }
+    .aurinko5 {
+      position:absolute;
+      top:370mm;
+      left:19cm;
+      width:220mm;
+      height:55cm;
+      opacity:0.6;
+      background: radial-gradient(circle, rgb(8, 4, 55) 0%, rgb(6, 0, 171) 100%);
+      border-radius:100%;
+      filter: blur(200.5px);
+    }
+
+    .shimma {
+        position:absolute;
+        top:46cm;
+        left:59cm;
+        height: 0.5cm;
+        width: 0.5cm;
+        background: #ffffff;
+        border-radius: 15% 99% 99% 90%/ 90% 80% 99% 88%;
+        rotate:50deg;
+        scale: 1 -1;
+        opacity: 0.5;
+
+        box-shadow:
+            0 0 80px 30px #fff,  /* inner white */
+            0 0 180px 60px rgb(210, 165, 210), /* middle magenta */
+            0 0 140px 90px rgb(149, 157, 183); /* outer cyan */
+    
+    }
+
 
     *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
@@ -627,6 +731,8 @@ left:3mm;
         
         <!-- esimerkit -->
         <div class="tausta"></div>
+        <div class="aurinko5"></div>
+        <div class="taustapat"></div>
         <div class="square5"></div>
         <div class="flower2"></div>
         <div class="square10"></div>
@@ -693,9 +799,45 @@ left:3mm;
         </div>
 
         <div class="teksti5">
-            <p>⚙ ⚙ ⩉ Anima computatri
+            <p> ⚙ <br>
+                ⚙ <br>
+                ⚙ <br>
+                ⩉ <br>
               </p>
         </div>
+
+        <div class="teksti6">
+            <p> a <br>
+                n <br>
+                i <br>
+                m <br>
+                a <br>
+                c <br>
+                o <br>
+                m <br>
+                p <br>
+                u <br>
+                t <br>
+                a <br>
+                t <br>
+                r <br>
+                i <br>
+              </p>
+        </div>
+        <div class="teksti7">
+            <p>Tietokoneen sielu; ohjelmistojen ja algoritmien muodostama henki,
+              </p>
+        </div>
+ 
+        <div class="teksti8">
+            <p>
+                j o k a <br>
+                e l ä v ö i t t ä ä<br>
+                 k o n e e n
+              </p>
+        </div>
+        <div class="pearl"></div>
+        <div class="shimma"></div>
 
 
       <!-- JULISTEEN SISÄLTÖ NÄIDEN KAHDEN KOMMENTIN VÄLIIN -->
